@@ -8,12 +8,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
   });
 });
-window.onscroll = function() {
-  const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-  const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-  const scrollPercent = (scrollTop / scrollHeight) * 100;
-  document.getElementById('scroll-progress').style.width = scrollPercent + '%';
-};
 
 // Contact Form Submission with AJAX
 const form = document.getElementById('contact-form');
